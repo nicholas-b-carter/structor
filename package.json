@@ -63,7 +63,7 @@
     "redux-thunk": "^2.1.0",
     "request": "^2.70.0",
     "reselect": "^2.5.4",
-    "socket.io": "1.4.5",
+    "socket.io": "2.0.0",
     "structor-commons": "0.0.1",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
