@@ -9,7 +9,9 @@
     "build-client-less": "gulp --gulpfile ./build-conf/gulpfile.js build-client-less",
     "build-client": "webpack --config ./build-conf/webpack.config.js --progress",
     "build-client-dev": "webpack --config ./build-conf/webpack-dev.config.js --progress --watch",
-    "postinstall": "node ./postexec.js"
+    "postinstall": "node ./postexec.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -39,7 +41,7 @@
     "css-loader": "^0.26.1",
     "eventsource-polyfill": "^0.9.6",
     "exports-loader": "^0.6.3",
-    "express": "4.13.4",
+    "express": "4.16.0",
     "express-urlrewrite": "1.2.0",
     "file-loader": "^0.9.0",
     "history": "^2.1.2",
@@ -70,7 +72,8 @@
     "webpack": "^2.2.1",
     "webpack-dev-middleware": "^1.10.0",
     "webpack-hot-middleware": "^2.16.0",
-    "whatwg-fetch": "^2.0.1"
+    "whatwg-fetch": "^2.0.1",
+    "snyk": "^1.88.0"
   },
   "devDependencies": {
     "del": "2.2.0",
@@ -97,5 +100,6 @@
     "editor",
     "hot-reload",
     "structor"
-  ]
+  ],
+  "snyk": true
 }
